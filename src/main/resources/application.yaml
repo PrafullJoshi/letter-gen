@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: default
+server:
+  port: 7373
+  servlet:
+    context-path: /letter-gen
+
+letter:
+  generator:
+    inputFilePathname: input/sample_input_file.xlsx
+    logoPath: input/Madhukosh_Logo_HR.JPG
+    document:
+      count:
+        threshold: 200
+  sender:
+    testMode: true
+    membersListFilePath: path_to_email_list_file
+    attachmentFilePath: path_to_email_attachment_file
+    attachmentNameShownInMail: $_Madhukosh_Maintainance.pdf
+
+gmail:
+  applicationName: <<app_name>>
+  senderGmailId: <<>>@gmail.com
+  secret:
+    clientId: 123234345-hr962j1eb6veaq3l52pp41ce4r2am5u6.apps.googleusercontent.com
+    clientSecret: 5P0mlXKagSAYHhI6s0HThg4R
+    accessToken: ya29.Il-0B3ejvRntFXbudoNvqTwKSIn-SfVV9KSAYALIKaSkie09xvCZ1TAFEKbAJ1CjUaeaU7cVjex085d7_D5am95fF4Ssx6uzItHcm8KuwheEVOLtx6FxwKKBlkg1dmGTXNgfIQ
+    refreshToken: 1//0gUOnkPks_sGlCgYIARAAGBASNwF-L9Ir-ILAYAS5UZaIAvXHwtOmSy1w36AMi2FiSLRiP_TcaazktGSpvP4NQXHH5_ISrVePwbw
+    code: 4/uAEa8XhBUvfXiNLxGwGTz1nz-Do5OYA44fvuLV_ngNevolilayasl5Xym4b23fM5jRkkER_DZaSA5cotMvAQCZmEhtps
